@@ -121,6 +121,7 @@ h1 {
 footer {
     border-top: 1px solid black;
     justify-items: center;
+    font: var(--heading-font);
 }
 
 .social-media img {
