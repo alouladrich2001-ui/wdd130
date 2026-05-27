@@ -1,0 +1,129 @@
+:root {
+    --primar-color: green;
+    --secondary-color: rgb(233, 203, 203);
+    --accent1-color: blue;
+    --accent2-color: rgb(249, 249, 245);
+    --heading-font: "Times New Roman", "Georgina", serif;
+    --body-font: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--primar-color);
+}
+
+header,
+main,
+footer {
+    width: 800px;
+    margin: 0 auto;
+
+}
+
+h1,
+h2 {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    text-align: center;
+    background-color: var(--primar-color);
+    opacity: 0.7;
+}
+
+nav,
+p,
+section {
+    margin: 16px;
+    padding: 8px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--primar-color);
+    max-height: 50px;
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    max-width: 100%;
+
+}
+
+nav img {
+    width: 70px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+nav a {
+    color: var(--secondary-color);
+    text-shadow: 2px 3px 3px #333;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.5;
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+    /* white text – make sure there is enough contrast with the background-color */
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    text-align: center;
+    opacity: 0.5;
+    border: 1px solid;
+    background-color: var(--primar-color);
+    color: white;
+    padding: 10px;
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+footer {
+    border-top: 1px solid black;
+    justify-items: center;
+}
+
+.social-media img {
+    width: 50px;
+    height: auto;
+}

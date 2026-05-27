@@ -51,3 +51,13 @@ footer {
     text-align: center;
     border-top: 1px #001 solid;
 }
+
+main ul {
+    text-decoration: none;
+    text-align: center;
+}
+
+.link {
+    text-decoration-line: none;
+    text-transform: none;
+}
