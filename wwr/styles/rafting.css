@@ -24,6 +24,88 @@ main,
 footer {
     width: 800px;
     margin: 0 auto;
+}
+
+section {
+    border: 1px solid #999;
+    padding: 1rem;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.history {
+    border: 1px solid #999;
+    padding: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.history h2 {
+    text-align: center;
+    margin: 0 0 1rem 0;
+    font-size: 2rem;
+}
+
+section {
+    border: 1px solid #999;
+    padding: 1rem;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.story {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.story p {
+    flex: 1;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.story img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.gallery figure {
+    margin: 0;
+    text-align: center;
+}
+
+.gallery img {
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+section {
+    background-color: var(--secondary-color);
+    justify-content: center;
 
 }
 
@@ -32,7 +114,6 @@ h2 {
     font-family: var(--body-font);
     color: var(--accent1-color);
     text-align: center;
-    background-color: var(--primar-color);
     opacity: 0.7;
 }
 
@@ -43,28 +124,32 @@ section {
     padding: 8px;
 }
 
-header nav {
-    display: flex;
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
     background-color: var(--primar-color);
-    max-height: 50px;
-    color: var(--secondary-color);
-    font-size: 1.5rem;
-    max-width: 100%;
-
+    margin: 20px auto;
 }
 
-nav img {
-    width: 70px;
-    height: auto;
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 14rem;
+    padding: 10px;
+}
+
+header img {
+    width: 50px;
 }
 
 nav ul {
     display: flex;
-    gap: 1rem;
+    gap: 4rem;
     list-style: none;
+
 }
 
 nav a {
@@ -122,9 +207,22 @@ footer {
     border-top: 1px solid black;
     justify-items: center;
     font: var(--heading-font);
+    display: flex;
+
+}
+
+footer p {
+    padding-top: 30px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 4rem;
 }
 
 .socialmedia img {
+
     width: 50px;
     height: auto;
+
 }

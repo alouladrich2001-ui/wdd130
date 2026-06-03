@@ -2,14 +2,15 @@ header {
     background-color: rgb(213, 197, 178);
     font-size: 1.5rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 20px;
-
 }
 
 header nav {
+    background-color: steelblue;
+    padding: 1rem;
     display: flex;
-    gap: 30px;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+    color: rgb(251, 5, 5);
 }
 
 a {
@@ -34,7 +35,6 @@ aside {
     background-color: #aaa;
     color: #0d0303;
     text-align: center;
-
 }
 
 aside img {
@@ -55,9 +55,11 @@ footer {
 main ul {
     text-decoration: none;
     text-align: center;
+    list-style-type: none;
 }
 
-.link {
-    text-decoration-line: none;
-    text-transform: none;
+header,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
 }
