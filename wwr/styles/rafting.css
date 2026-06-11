@@ -22,7 +22,8 @@ body {
 header,
 main,
 footer {
-    width: 800px;
+    max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -135,10 +136,11 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    gap: 14rem;
+    gap: 16rem;
     padding: 10px;
+
 }
 
 header img {
@@ -147,15 +149,15 @@ header img {
 
 nav ul {
     display: flex;
-    gap: 4rem;
+    gap: 8rem;
     list-style: none;
-
 }
 
 nav a {
     color: var(--secondary-color);
     text-shadow: 2px 3px 3px #333;
     text-decoration: none;
+
 }
 
 .hero {
@@ -169,16 +171,16 @@ nav a {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
+    left: 0;
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.5;
+    opacity: 0.8;
     background-color: var(--accent1-color);
     color: var(--accent2-color);
-    /* white text – make sure there is enough contrast with the background-color */
 }
 
 .hero article img {
@@ -225,4 +227,82 @@ footer p {
     width: 50px;
     height: auto;
 
+}
+
+/* CONTACT PAGE */
+
+.contact-title {
+    position: static;
+    background: none;
+    color: var(--accent1-color);
+    opacity: 1;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.contact-info,
+.map,
+.contact-form {
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+}
+
+.map iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+}
+
+.employees {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+}
+
+.employees figure {
+    text-align: center;
+}
+
+.employees img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.contact-form form {
+    display: grid;
+    gap: 1rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-form button {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    opacity: 0.9;
 }
